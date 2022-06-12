@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.itauba {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.itauba p {
+    font-size: 2em;
+    margin: 15px;
+    background: #fafa;
+}
+
