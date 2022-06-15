@@ -112,3 +112,27 @@ input::placeholder{
     background: #62baea;
     color: #fff;
 }
+
+
+.itauba {
+    /* display: none; */
+    margin-top: 35px;
+    margin-left: 20px;
+}
+
+.itauba.active {
+    display: block;
+}
+
+.itauba .list-itauba{
+    display: flex;
+    flex-direction: column;
+    background: #fafa;
+}
+
+.itauba .list-itauba p{
+    font-size: 1.2em;
+    margin: 20px;
+}
+
+

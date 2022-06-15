@@ -17,7 +17,7 @@
         <div class="dropdown">
             <input type="'text" class="textBox" placeholder="Bois" readonly>
             <div class="option">
-                <div onclick="show('Itauba')"><a href="itauba.html">Itauba</a></div>
+                <div onclick="show('Itauba')"><a  onclick="show('itauba')"href="#itauba">Itauba</a></div>
                 <div onclick="show('IPE')">IPE</div>
                 <div onclick="show('Kumaru')">Kumaru</div>
                 <div onclick="show('Structure')">Structure</div>
@@ -56,6 +56,14 @@
         </div>
     </div>
 
+    <section id="Itauba" class="itauba">
+        <div class="list-itauba">
+            <p>Itauba 90 :</p>
+            <p>Itauba 120 :</p>
+            <p>Itauba 150 :</p>
+            <p>Itauba 180 :</p>
+    </section>
+
     
     <script>
         function show(anything) {
@@ -65,6 +73,10 @@
         let dropdown = document.querySelector('.dropdown')
         dropdown.onclick = function(){
             dropdown.classList.toggle('active');
+        }
+        let itauba = document.querySelector('.itauba')
+        itauba.onclick = function(){
+            itauba.classList.toggle('active');
         }
     </script>
 </body>
