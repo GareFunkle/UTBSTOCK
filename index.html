@@ -1,83 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css" type="text/css" >
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
     <title>UTB Stock</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="wrapper">
-        <div class="logo">
-            <h1>UTB Stock</h1>
-        </div>
+      <div class="logo">
+        <img src="Photo/Logo/logo.png" alt="" />
+      </div>
     </div>
-    <div class="wrap">
-        <div class="dropdown">
-            <input type="'text" class="textBox" placeholder="Bois" readonly>
-            <div class="option">
-                <div onclick="show('Itauba')"><a  onclick="show('itauba')"href="#itauba">Itauba</a></div>
-                <div onclick="show('IPE')">IPE</div>
-                <div onclick="show('Kumaru')">Kumaru</div>
-                <div onclick="show('Structure')">Structure</div>
-                <div onclick="show('Porteuse')">Porteuse</div>
-            </div>
-        </div>
-        <div class="dropdown">
-            <input type="'text" class="textBox" placeholder="Visserie" readonly>
-            <div class="option">
-                <div onclick="show('html')"><a href="">HTML</a></div>
-                <div onclick="show('CSS')">CSS</div>
-                <div onclick="show('Javascript')">Javascript</div>
-                <div onclick="show('Figma')">Figma</div>
-                <div onclick="show('ReactJS')">ReactJS</div>
-            </div>
-        </div>
-        <div class="dropdown">
-            <input type="'text" class="textBox" placeholder="Cale" readonly>
-            <div class="option">
-                <div onclick="show('html')">HTML</div>
-                <div onclick="show('CSS')">CSS</div>
-                <div onclick="show('Javascript')">Javascript</div>
-                <div onclick="show('Figma')">Figma</div>
-                <div onclick="show('ReactJS')">ReactJS</div>
-            </div>
-        </div>
-        <div class="dropdown">
-            <input type="'text" class="textBox" placeholder="Produit" readonly>
-            <div class="option">
-                <div onclick="show('html')">HTML</div>
-                <div onclick="show('CSS')">CSS</div>
-                <div onclick="show('Javascript')">Javascript</div>
-                <div onclick="show('Figma')">Figma</div>
-                <div onclick="show('ReactJS')">ReactJS</div>
-            </div>
-        </div>
-    </div>
+    <nav>
+      <ul>
+        <li class="menu-deroulant">
+          <a href="index.html">Bois</a>
+          <ul class="sous-menu">
+            <li><a href="pages/itauba.html">Itauba</a></li>
+            <li><a href="pages/Ipe.html">IPE</a></li>
+            <li><a href="pages/cumaru.html">Cumaru</a></li>
+            <li><a href="#">Structure</a></li>
+          </ul>
+        </li>
+        <li class="menu-deroulant">
+          <a href="#">Quincaillerie</a>
+          <ul class="sous-menu">
+            <li><a href="#">Terrasse</a></li>
+            <li><a href="#">Structure</a></li>
+            <li><a href="#">Plot Béton</a></li>
+            <li><a href="#">Vis de fondation</a></li>
+          </ul>
+        </li>
+        <li class="menu-deroulant">
+          <a href="#">Pharmacie</a>
+          <ul class="sous-menu">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+          </ul>
+        </li>
+        <li class="menu-deroulant">
+          <a href="#">Produit</a>
+          <ul class="sous-menu">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
 
-    <section id="Itauba" class="itauba">
-        <div class="list-itauba">
-            <p>Itauba 90 :</p>
-            <p>Itauba 120 :</p>
-            <p>Itauba 150 :</p>
-            <p>Itauba 180 :</p>
+    <section class="wrap">
+      <div class="tag">
+        <a href="#">Visserie</a>
+        <a href="#">Visserie</a>
+        <a href="#">Visserie</a>
+        <a href="#">Visserie</a>
+        <a href="#">Visserie</a>
+        <a href="#">Visserie</a>
+        <a href="#">Visserie</a>
+        <a href="#">Visserie</a>
+        <a href="#">Visserie</a>
+        <a href="#">Visserie</a>
+        <a href="#">Visserie</a>
+        <a href="#">Visserie</a>
+        <a href="#">Visserie</a>
+        <a href="#">Visserie</a>
+        <a href="#">Visserie</a>
+        <a href="#">Visserie</a>
+        <a href="#">Visserie</a>
+        <a href="#">Visserie</a>
+        <a href="#">Visserie</a>
+        <a href="#">Visserie</a>
+        <a href="#">Visserie</a>
+        <a href="#">Visserie</a>
+        <a href="#">Visserie</a>
+        <a href="#">Visserie</a>
+        <a href="#">Visserie</a>
+        <a href="#">Visserie</a>
+        <a href="#">Visserie</a>
+        <a href="#">Visserie</a>
+        <a href="#">Visserie</a>
+        <a href="#">Visserie</a>
+        <a href="#">Visserie</a>
+        <a href="#">Visserie</a>
+        <a href="#">Visserie</a>
+        <a href="#">Visserie</a>
+        <a href="#">Visserie</a>
+        <a href="#">Visserie</a>
+      </div>
     </section>
-
-    
-    <script>
-        function show(anything) {
-            document.querySelector('.textBox').value = anything;
-        }
-
-        let dropdown = document.querySelector('.dropdown')
-        dropdown.onclick = function(){
-            dropdown.classList.toggle('active');
-        }
-        let itauba = document.querySelector('.itauba')
-        itauba.onclick = function(){
-            itauba.classList.toggle('active');
-        }
-    </script>
-</body>
+  </body>
 </html>

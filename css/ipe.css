@@ -3,22 +3,18 @@
   padding: 0;
 }
 
-#Itauba {
+#Ipe {
   margin-top: 35px;
   margin-left: 20px;
 }
 
-#Itauba .list-itauba {
+#Ipe .list-ipe {
   display: flex;
   flex-direction: column;
-  /* background: #fafa; */
+  background: #fafa;
 }
 
-#Itauba .list-itauba p {
+#Ipe .list-ipe p {
   font-size: 1.2em;
   margin: 20px;
-}
-
-#Itauba .list-itauba p input {
-    font-size: 1em;
 }
