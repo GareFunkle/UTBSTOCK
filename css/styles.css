@@ -156,16 +156,19 @@ li a {
 @keyframes apparitionSousMenu2 {
     0% {
       position: absolute;
+      max-width: 0px;
       left: 250px;
-      max-width: 200px;
       box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0);
       border-left: 3px solid #2169ec;
+      border-top: 3px solid #2169ec;
     }
     30% {
       position: absolute;
       left: 250px;
       max-width: 200px;
       box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.3);
+      border-top: 3px solid #2169ec;
+
     }
     100% {
         position: absolute;
@@ -174,6 +177,8 @@ li a {
       max-width: 200px;
       border-left: 3px solid #2169ec;
       box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.3);
+      border-top: 3px solid #2169ec;
+
     }
   }
 
