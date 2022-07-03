@@ -8,121 +8,97 @@
     <title>UTB Stock</title>
   </head>
   <body>
-    <div class="wrapper">
-      <div class="logo">
-        <img src="Photo/Logo/logo.png" alt="">
+    <div id="app">
+      <div class="wrapper">
+        <div class="logo">
+          <img src="Photo/Logo/logo.png" alt="">
+        </div>
       </div>
-    </div>
-    <nav>
-      <ul>
-        <li class="menu-deroulant">
-          <a href="index.html">Bois</a>
-          <ul class="sous-menu">
-            <li><a href="pages/itauba.html">Itauba</a></li>
-            <li><a href="pages/Ipe.html">IPE</a></li>
-            <li><a href="pages/cumaru.html">Cumaru</a></li>
-            <li class="menu-deroulant">
-              <a href="#">Structures</a>
-              <ul class="sous-menu2">
-                <li><a href="#">Lambourdes</a></li>
-                <li><a href="#">Solives</a></li>
-                <li><a href="#">Poteaux</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li class="menu-deroulant">
-          <a href="#">Quincailleries</a>
-          <ul class="sous-menu">
-            <li class="menu-deroulant">
-                <a href="#">Terrasses</a>
-                <ul class="sous-menu2">
-                    <li><a href="#">Visseries</a></li>
-                    <li><a href="#">Cales</a></li>
-                </ul>
-            </li>
-            <li class="menu-deroulant">
+      <nav>
+        <ul>
+          <li class="menu-deroulant">
+            <a href="index.html">Bois</a>
+            <ul class="sous-menu">
+              <li>
+                <router-link to="/itauba">
+                  <i>Itauba</i> 
+                </router-link>
+              </li>
+              <li><a href="pages/Ipe.html">IPE</a></li>
+              <li><a href="pages/cumaru.html">Cumaru</a></li>
+              <li class="menu-deroulant">
                 <a href="#">Structures</a>
                 <ul class="sous-menu2">
-                    <li><a href="#">Visseries</a></li>
-                    <li><a href="#">Equerres</a></li>
-                    <li><a href="#">Pied de poteaux</a></li>
-                    <li><a href="#">Vis de fondations</a></li>
-                    <li><a href="#">Caoutchouc liquide</a></li>
+                  <li><a href="#">Lambourdes</a></li>
+                  <li><a href="#">Solives</a></li>
+                  <li><a href="#">Poteaux</a></li>
                 </ul>
-            </li>
-            <li class="menu-deroulant">
-                <a href="#">Plot Bétons</a>
-                <ul class="sous-menu2">
-                    <li><a href="#">Bétons</a></li>
-                    <li><a href="#">Ciments</a></li>
-                </ul>
-            </li>
-            <li><a href="#">????</a></li>
-          </ul>
-        </li>
-        <li class="menu-deroulant">
-          <a href="#">Produit</a>
-          <ul class="sous-menu">
-            <li><a href="#">Silicone</a></li>
-            <li><a href="#">Mastic</a></li>
-            <li><a href="#">Caoutchouc liquide</a></li>
-            <li><a href="#">Saturateur</a></li>
-            <li><a href="#">Degriseur</a></li>
-            <li><a href="#">Bombe de traçage</a></li>
-            <li><a href="#">Craie cordex</a></li>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-deroulant">
+            <a href="#">Quincailleries</a>
+            <ul class="sous-menu">
+              <li class="menu-deroulant">
+                  <a href="#">Terrasses</a>
+                  <ul class="sous-menu2">
+                      <li><a href="#">Visseries</a></li>
+                      <li><a href="#">Cales</a></li>
+                  </ul>
+              </li>
+              <li class="menu-deroulant">
+                  <a href="#">Structures</a>
+                  <ul class="sous-menu2">
+                      <li><a href="#">Visseries</a></li>
+                      <li><a href="#">Equerres</a></li>
+                      <li><a href="#">Pied de poteaux</a></li>
+                      <li><a href="#">Vis de fondations</a></li>
+                      <li><a href="#">Caoutchouc liquide</a></li>
+                  </ul>
+              </li>
+              <li class="menu-deroulant">
+                  <a href="#">Plot Bétons</a>
+                  <ul class="sous-menu2">
+                      <li><a href="#">Bétons</a></li>
+                      <li><a href="#">Ciments</a></li>
+                  </ul>
+              </li>
+              <li><a href="#">????</a></li>
+            </ul>
+          </li>
+          <li class="menu-deroulant">
+            <a href="#">Produit</a>
+            <ul class="sous-menu">
+              <li><a href="#">Silicone</a></li>
+              <li><a href="#">Mastic</a></li>
+              <li><a href="#">Caoutchouc liquide</a></li>
+              <li><a href="#">Saturateur</a></li>
+              <li><a href="#">Degriseur</a></li>
+              <li><a href="#">Bombe de traçage</a></li>
+              <li><a href="#">Craie cordex</a></li>
 
-          </ul>
-        </li>
-        <li class="menu-deroulant">
-          <a href="#">Autre</a>
-          <ul class="sous-menu">
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
+            </ul>
+          </li>
+          <li class="menu-deroulant">
+            <a href="#">Autre</a>
+            <ul class="sous-menu">
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      
+      <router-view></router-view>
+    </div>  
 
-    <section class="wrap">
-      <div class="tag">
-        <a href="#">Visserie</a>
-        <a href="#">Visserie</a>
-        <a href="#">Visserie</a>
-        <a href="#">Visserie</a>
-        <a href="#">Visserie</a>
-        <a href="#">Visserie</a>
-        <a href="#">Visserie</a>
-        <a href="#">Visserie</a>
-        <a href="#">Visserie</a>
-        <a href="#">Visserie</a>
-        <a href="#">Visserie</a>
-        <a href="#">Visserie</a>
-        <a href="#">Visserie</a>
-        <a href="#">Visserie</a>
-        <a href="#">Visserie</a>
-        <a href="#">Visserie</a>
-        <a href="#">Visserie</a>
-        <a href="#">Visserie</a>
-        <a href="#">Visserie</a>
-        <a href="#">Visserie</a>
-        <a href="#">Visserie</a>
-        <a href="#">Visserie</a>
-        <a href="#">Visserie</a>
-        <a href="#">Visserie</a>
-        <a href="#">Visserie</a>
-        <a href="#">Visserie</a>
-        <a href="#">Visserie</a>
-        <a href="#">Visserie</a>
-        <a href="#">Visserie</a>
-        <a href="#">Visserie</a>
-        <a href="#">Visserie</a>
-        <a href="#">Visserie</a>
-        <a href="#">Visserie</a>
-        <a href="#">Visserie</a>
-        <a href="#">Visserie</a>
-        <a href="#">Visserie</a>
-      </div>
-    </section>
+    <script type="text/x-template" id="home">
+        <h1>Articles</h1>
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router@2.0.0/dist/vue-router.js"></script>
+    <script src="./js/vue.js"></script>
+    
   </body>
 </html>
